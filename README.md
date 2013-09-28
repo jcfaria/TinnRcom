@@ -1,7 +1,7 @@
 TinnRcom
 ========
 
-Resources of Tinn-R GUI/Editor for R Environment - R Package
+Resources of Tinn-R GUI/Editor for R Environment - R Package.
 
 This is the development code of the _Windows only R package:_ __TinnRcom__.  
 You should use it if you want to contribute to its development
