@@ -1,0 +1,19 @@
+citHeader("To cite TinnRcom in publications use:")
+
+citEntry(entry  = "Manual",
+         title  = "Resources of Tinn-R GUI/Editor for R Environment.",
+         author = "José Cláudio Faria",
+         organization = "UESC",
+         address      = "Ilheus, Bahia, Brasil",
+         year         = version$year,
+         textVersion =
+         paste("Faria, J.C (", version$year, ").",
+               "Resources of Tinn-R GUI/Editor for R Environment.",
+               "UESC, Ilheus, Brasil.",
+               sep="")
+         )
+
+citFooter("We have invested a lot of time and effort in creating TinnRcom,",
+          "please cite it when using it together with R.",
+          "See also", sQuote("citation()"),
+          "for citing R.")

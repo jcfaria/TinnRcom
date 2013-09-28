@@ -1,0 +1,18 @@
+Package: TinnRcom
+Type: Package
+Title: Resources of Tinn-R GUI/Editor for R Environment
+Version: 1.0-13
+Date: 2013-09-25
+Author: José Cláudio Faria <joseclaudio.faria@gmail.com>, based on the
+        sources of Philippe Grosjean <phgrosjean@sciviews.org> and vimcom
+        of Jakson A. de Aquino <jalvesaq@gmail.com>
+Maintainer: José Cláudio Faria <joseclaudio.faria@gmail.com>
+Depends: R (>= 2.6.0), utils, R2HTML, Hmisc, svSocket, formatR
+Description: Implements a set of customized functions, adapted from svFamily
+             packages of Philippe Grosjean and co-authors, as soon as 
+             vimcom of Jakson A. de Aquino, necessary to 
+             Tinn-R GUI/Editor for R environment
+License: GPL (>= 2)
+OS_type: windows
+Encoding: latin1
+Packaged: 2013-09-27 16:52:19 UTC; jcfaria
