@@ -3,7 +3,7 @@
 # Original code : [svMisc] objSearch function
 # Adapted by    : José Cláudio Faria
 # Objective     : To supply the current necessity of the Tinn-R project
-# Date          : 2013/09/24 - 17:21:07
+# Date          : 2013/10/23 - 13:10:09
 #=======================================================================
 
 trObjSearch <- function(sep='\t',

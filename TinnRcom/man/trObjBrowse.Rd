@@ -49,9 +49,7 @@
 }
 
 \author{
-  Original authors: Philippe Grosjean \email{phgrosjean@sciviews.org}\cr
-                    Jakson A. de Aquino \email{jalvesaq@gmail.com}\cr
-  Adaptations: José Cláudio Faria \email{joseclaudio.faria@gmail.com}\cr
+  José Cláudio Faria \email{joseclaudio.faria@gmail.com}\cr
 }
 
 \seealso{

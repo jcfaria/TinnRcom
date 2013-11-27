@@ -2,19 +2,20 @@
 \alias{trArgs}
 
 \title{
-  Show function arguments in a human-readable way - get a call tip
+  Show function arguments in a human-readable way
 }
 
 \description{
   \code{trArgs()} displays function arguments in a better way than \code{args()}
-  does. It is primarily intended for code tips in GUIs.
+  does. It is primarily intended for code completion and call tip for Tinn-R project.
 }
 
 \usage{
 trArgs(fname,
        txt='',
        pkg='',
-       classfor)
+       classfor,
+       sep='|')
 }
 
 \arguments{
@@ -22,21 +23,22 @@ trArgs(fname,
   \item{txt}{A string with a \R valid object.}
   \item{pkg}{A string with a package name.}
   \item{classfor}{A string with a \R valid object.}
+  \item{sep}{The field separator character.
+    The function arguments are separated by this character.
+    '|' is the default.}
 }
 
 \value{
-  A string with the calling syntax of the function
+  A string with the calling syntax of the function.
 }
 
 \author{
-  Original authors: Philippe Grosjean \email{phgrosjean@sciviews.org}\cr
-                    Jakson A. de Aquino \email{jalvesaq@gmail.com}\cr
-  Adaptations: José Cláudio Faria \email{joseclaudio.faria@gmail.com}\cr
+  José Cláudio Faria \email{joseclaudio.faria@gmail.com}\cr
 }
 
 \note{
   \code{Args()} is supposed to display S3 and S4 methods, and primitives
-  adequately,... but this is not implemented yet in the current version!
+  adequately,... but this is not full implemented yet in the current version!
 }
 
 \keyword{utilities}

@@ -6,14 +6,14 @@
 # Date         : 2013/09/24 - 17:20:57
 #=======================================================================
 
-'trObjList' <- function(id='default',
-                        envir=.GlobalEnv,
-                        all.names=TRUE,
-                        pattern='',
-                        group='',
-                        all.info=FALSE,
-                        sep='\t',
-                        path=NULL)
+trObjList <- function(id='default',
+                      envir=.GlobalEnv,
+                      all.names=TRUE,
+                      pattern='',
+                      group='',
+                      all.info=FALSE,
+                      sep='\t',
+                      path=NULL)
 {
   # Make sure that id is character
   id <- as.character(id)[1]

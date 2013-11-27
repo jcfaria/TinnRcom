@@ -3,13 +3,14 @@
 # Original code: [vimcom] package
 # Adapted by   : José Cláudio Faria
 # Objective    : To supply the current necessity of the Tinn-R project
-# Date         : 2013/09/24 - 17:19:23
+# Date         : 2013/10/30 - 12:20:30
 #=======================================================================
 
 trArgs <- function(fname,
                    txt='',
                    pkg='',
-                   classfor)
+                   classfor,
+                   sep='|')
 {
 
   # Function to format output
@@ -74,6 +75,9 @@ trArgs <- function(fname,
   frm <- NA
   fmeth <- NA
 
+  try(classfor <- eval(parse(text=classfor)),
+      silent=TRUE)
+
   if(!missing(classfor)) {
     if(length(grep(fname,
                    names(.knownS3Generics))) > 0) {
@@ -81,13 +85,9 @@ trArgs <- function(fname,
 
       options(warn=-1)
 
-#      try(classfor <- classfor,
-#          silent=TRUE)  # classfor may be a function
-
-      # If classfor is character, not an object (as it needs from TCL/DDE)
-      if(exists(as.character(substitute(classfor))))
-        if(is.character(classfor))
-          classfor <- eval(parse(text=classfor))
+      #if(exists(as.character(substitute(classfor))))
+      #  if(is.character(classfor))
+      #    classfor <- eval(parse(text=classfor))
 
       try(classfor <- classfor,
           silent=TRUE)  # classfor may be a function
@@ -175,35 +175,15 @@ trArgs <- function(fname,
 
   res <- NULL
 
-  for (field in names(frm)) {
-    type <- typeof(frm[[field]])
-
-    if (type == 'NULL') {
-      res <- append(res,
-                    paste(field,
-                          'NULL',
-                          sep='='))
-    } else if (type == 'symbol') {
-      res <- append(res,
-                    paste(field,
-                          sep=''))
-    } else if (type == 'character') {
-      res <- append(res,
-                    paste(field,
-                          frm[[field]],
-                          sep='='))
-    } else if (type == 'logical' ||
-               type == 'double') {
-      res <- append(res,
-                    paste(field,
-                          as.character(frm[[field]]),
-                          sep='='))
-    } else
+  for (field in names(frm))
+    if (field != '...')
       res <- append(res,
                     paste(field,
                           deparse(frm[[field]]),
                           sep='='))
-  }
+    else
+      res <- append(res,
+                    field)
 
   res <- grep(paste('^',
                     txt,
@@ -212,7 +192,7 @@ trArgs <- function(fname,
               value=TRUE)
 
   res <- paste(res,
-               collapse=', ')
+               collapse=sep)
 
   if(length(res) == 0 ||
        res == '') {

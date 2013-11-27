@@ -7,16 +7,20 @@
 # Objective     : To supply the current necessity of the Tinn-R project
 # Date          : 2013/09/24 - 17:21:07
 #=======================================================================
-trPaths <- file.path(Sys.getenv('APPDATA'),
-                     'Tinn-R',
-                     'tmp',
-                     c('',
-                       'search.txt',
-                       'objects.txt',
-                       'file.r',
-                       'selection.r',
-                       'block.r',
-                       'lines.r',
-                       'reformat-input.r',
-                       'reformat-output.r'),
-                     fsep='\\')
+.onLoad <- function(libname, 
+                    pkgname)
+{
+  .trPaths <<- file.path(Sys.getenv('APPDATA'),
+                         'Tinn-R',
+                         'tmp',
+                         c('',
+                           'search.txt',
+                           'objects.txt',
+                           'file.r',
+                           'selection.r',
+                           'block.r',
+                           'lines.r',
+                           'reformat-input.r',
+                           'reformat-output.r'),
+                         fsep='\\')
+}

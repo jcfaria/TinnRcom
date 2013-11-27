@@ -9,5 +9,4 @@ export(
   trComplete,
   trExport,
   trObjList,
-  trObjSearch,
-  trPaths)
+  trObjSearch)

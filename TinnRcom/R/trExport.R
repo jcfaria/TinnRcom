@@ -10,7 +10,7 @@ trExport <- function(x,
                      type='raw',
                      file='clipboard')
 {
-  require(R2HTML)
+  # R2HTML package
   # HTML sub-function
   exportHTML <- function(x,
                          file)
@@ -29,7 +29,7 @@ trExport <- function(x,
    invisible(return(TRUE))
  }
 
-  require(Hmisc)
+  # Hmisc package
   # LaTeX sub-function
   exportLaTeX <- function(x,
                           file)
@@ -144,17 +144,18 @@ trExport <- function(x,
     'typelist'= unique(c('raw',
                          'ascii',
                          'html',
-                         'latex',
-                         listCustoms('export', 
-                                     'default'))),
-    'html' = exportHTML(x,
-                        file),
-    'latex' = exportLaTeX(x,
-                          file),
+                         'latex')),
+    exportRaw(x,
+              file),
+
     'ascii' = exportASCII(x,
                           file),
-    exportRaw(x,
-              file))
+
+    'html' = exportHTML(x,
+                        file),
+
+    'latex' = exportLaTeX(x,
+                          file))
 
   ifelse(type == 'typelist',
          return(res),
