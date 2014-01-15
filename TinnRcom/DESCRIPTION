@@ -1,8 +1,8 @@
 Package: TinnRcom
 Type: Package
 Title: Resources of Tinn-R GUI/Editor for R Environment
-Version: 1.0-14
-Date: 2013-10-30
+Version: 1.0-15
+Date: 2014-01-15
 Author: José Cláudio Faria <joseclaudio.faria@gmail.com>, based on the
         sources of Philippe Grosjean <phgrosjean@sciviews.org> and vimcom
         of Jakson A. de Aquino <jalvesaq@gmail.com>
@@ -15,4 +15,3 @@ Description: Implements a set of customized functions, inspired from svFamily
 License: GPL (>= 2)
 OS_type: windows
 Encoding: latin1
-Packaged: 2013-10-30 14:21:14 UTC; jcfaria

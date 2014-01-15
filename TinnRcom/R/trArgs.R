@@ -47,12 +47,12 @@ trArgs <- function(fname,
              '',
              f)
 
-    f <- sub('=',
-             '\x07',
-             f)
+#    f <- sub('=',
+#             '\x07',
+#             f)
 
     paste(f,
-          collapse='\x09')
+          collapse=sep)
   }
   
   # Get package for not exported function
