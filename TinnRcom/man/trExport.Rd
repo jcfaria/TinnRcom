@@ -7,7 +7,7 @@
 
 \description{
   \code{trExport} is a generic function (S3 based) to convert objects into
-  various foreign formats and write it to a file or a connection.
+  foreign formats and write it to a file or a connection.
 }
 
 \usage{
@@ -31,7 +31,7 @@
 }
 
 \author{
-  José Cláudio Faria \email{joseclaudio.faria@gmail.com}\cr
+  José Cláudio Faria \email{joseclaudio.faria@gmail.com}
 }
 
 \keyword{IO}

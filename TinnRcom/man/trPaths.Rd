@@ -17,4 +17,4 @@
   José Cláudio Faria \email{joseclaudio.faria@gmail.com}\cr
 }
 
-\keyword{ utilities }
+\keyword{utilities}

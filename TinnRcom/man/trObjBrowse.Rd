@@ -52,9 +52,4 @@
   José Cláudio Faria \email{joseclaudio.faria@gmail.com}\cr
 }
 
-\seealso{
-  \code{\link[svMisc]{objSearch}},
-  \code{\link[svMisc]{objList}},
-}
-
 \keyword{misc}

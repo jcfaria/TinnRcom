@@ -1,6 +1,4 @@
 import(utils)
-importFrom(R2HTML, HTML)
-importFrom(Hmisc, latex)
 importFrom(formatR, tidy.source)
 importFrom(svSocket, evalServer)
 

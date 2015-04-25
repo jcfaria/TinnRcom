@@ -1,4 +1,8 @@
-2014-01-015 vs. 1.0-15 - José Cláudio Faria  <joseclaudio.faria@gmail.com>
+2015-03-11 vs. 1.0-15 - José Cláudio Faria  <joseclaudio.faria@gmail.com>
+	* Removed dependency from Hmisc and R2HTML packages
+  * The hability of export objects to HTML and LaTeX was removed
+
+2014-01-22 vs. 1.0-15 - José Cláudio Faria  <joseclaudio.faria@gmail.com>
 	* Updated primitive detection of trArgs function
 
 2013-11-01 vs. 1.0-14 - José Cláudio Faria  <joseclaudio.faria@gmail.com>

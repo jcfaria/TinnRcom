@@ -46,19 +46,8 @@
   the help of \code{rc.settings()}.
 }
 
-\note{
-  This function uses \code{utils:::.win32consoleCompletion()} as completion
-  engine, then, it makes the result compatible with old version of
-  \code{trComplete()}.
-}
-
 \author{
   José Cláudio Faria \email{joseclaudio.faria@gmail.com}\cr
-}
-
-\seealso{
-  \code{\link[svMisc]{Complete}}
-  \code{\link[svMisc]{CallTip}},
 }
 
 \keyword{utilities}

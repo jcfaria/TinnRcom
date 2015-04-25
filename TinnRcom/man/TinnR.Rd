@@ -7,10 +7,11 @@
 } 
  
 \description{ 
-  Implements a set of customized functions, inspired from \pkg{svIDE}, \pkg{svMisc} 
-  and \pkg{svIO} packages of Philippe Grosjean and co-authors as soon as \pkg{vimcom}
-  of Jakson A. de Aquino, required to Tinn-R GUI/Editor for R environment. 
-} 
+  Implements a set of customized functions, inspired from \pkg{svFamily}
+  packages of Philippe Grosjean and co-authors, as soon as
+  \pkg{vimcom} of Jakson A. de Aquino, necessary to
+  Tinn-R GUI/Editor for R environment.
+}
  
 \author{
   José Cláudio Faria \email{joseclaudio.faria@gmail.com}\cr

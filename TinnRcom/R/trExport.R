@@ -3,51 +3,13 @@
 # Original code: [svIO] export.default function
 # Adapted by   : José Cláudio Faria
 # Objective    : To supply the current necessity of the Tinn-R project
-# Date         : 2013/09/25 - 12:24:14
+# Date         : 2015/03/11 - 14:04:15
 #=======================================================================
 
 trExport <- function(x,
                      type='raw',
                      file='clipboard')
 {
-  # R2HTML package
-  # HTML sub-function
-  exportHTML <- function(x,
-                         file)
- {
-   ifelse(file != '',
-          tmpfile <- file(file,
-                          open='w'),
-          tmpfile <- file)
-
-   HTML(x,
-       file=tmpfile)
-
-   if(file != '')
-     close(tmpfile)
-
-   invisible(return(TRUE))
- }
-
-  # Hmisc package
-  # LaTeX sub-function
-  exportLaTeX <- function(x,
-                          file)
-  {
-    ifelse(file != '',
-           tmpfile <- file(file,
-                           open='w'),
-           tmpfile <- file)
-
-    latex(x,
-         file=tmpfile)
-
-    if(file != '')
-      close(tmpfile)
-
-    invisible(return(TRUE))
-  }
-
   # ASCII sub-function
   exportASCII <- function(x,
                           file)
@@ -142,19 +104,11 @@ trExport <- function(x,
 
   res <- switch(type,
     'typelist'= unique(c('raw',
-                         'ascii',
-                         'html',
-                         'latex')),
+                         'ascii')),
     exportRaw(x,
               file),
 
     'ascii' = exportASCII(x,
-                          file),
-
-    'html' = exportHTML(x,
-                        file),
-
-    'latex' = exportLaTeX(x,
                           file))
 
   ifelse(type == 'typelist',
