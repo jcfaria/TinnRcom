@@ -1,0 +1,9 @@
+TinnRcom-package        Resources of Tinn-R GUI/Editor for R
+                        Environment
+trArgs                  Show function arguments in a human-readable way
+trComplete              Get a completion list for a R code fragment
+trExport                Export the content of an object in a foreign
+                        format
+trObjSearch             Functions to implement the an object browser (R
+                        explorer) in Tinn-R
+trPaths                 Short paths to Tinn-R Editor
