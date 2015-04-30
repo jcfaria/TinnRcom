@@ -1,5 +1,5 @@
 import(utils)
-importFrom(formatR, tidy.source)
+importFrom(formatR, tidy_source)
 importFrom(svSocket, evalServer)
 
 export(
