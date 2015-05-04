@@ -10,9 +10,8 @@
 .onLoad <- function(libname, 
                     pkgname)
 {
-  .trPaths <<- file.path(Sys.getenv('APPDATA'),
+  .trPaths <<- file.path(Sys.getenv('TEMP'),
                          'Tinn-R',
-                         'tmp',
                          c('',
                            'search.txt',
                            'objects.txt',

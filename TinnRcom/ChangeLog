@@ -1,3 +1,7 @@
+2015-05-02 vs. 1.0-18 - José Cláudio Faria  <joseclaudio.faria@gmail.com>
+	* Changes in file /R/trPaths to be compatible with Tinn-RPortable.
+	  The place of .trPaths variable will be the TEMP environment variable.
+
 2015-04-26 vs. 1.0-17 - José Cláudio Faria  <joseclaudio.faria@gmail.com>
 	* Cosmetic corrections
 

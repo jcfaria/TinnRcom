@@ -1,8 +1,8 @@
 Package: TinnRcom
 Type: Package
 Title: Resources of Tinn-R GUI/Editor for R Environment
-Version: 1.0.17
-Date: 2015-04-26
+Version: 1.0.18
+Date: 2015-05-02
 Author: José Cláudio Faria <joseclaudio.faria@gmail.com>, based on the
         sources of Philippe Grosjean <phgrosjean@sciviews.org> and vimcom
         of Jakson A. de Aquino <jalvesaq@gmail.com>
